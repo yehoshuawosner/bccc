@@ -4,5 +4,5 @@ export const environment = {
   HOME_URI_PATH: '',
   FILES_URI_PATH: 'files',
   TABLES_URI_PATH: 'tables',
-  API_FILES: 'http://localhost:3000/files/'
+  API_FILES: 'https://beaconcure-server.herokuapp.com/files/'
 };
