@@ -1,0 +1,7 @@
+.card-accordion{
+    margin : 20px;
+}
+.card-accordion-title {
+    color: rgba(0,0,0,.87);
+    text-transform: uppercase;
+}

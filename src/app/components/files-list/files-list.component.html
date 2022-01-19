@@ -1,0 +1,22 @@
+<div>
+    <mat-card class="card">
+        <mat-card-title>Files List</mat-card-title>
+        <mat-card-content>
+            <mat-selection-list #items [multiple]="false">
+                <mat-list-option class="card-list-option" *ngFor="let item of itemsList" [value]="item.name" [routerLink]="[tablesUri]" [queryParams]="{source:item.name}">
+                    
+                    <mat-list-item>
+                        {{item.name}}
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    
+                </mat-list-option>
+            </mat-selection-list>
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+        
+        <mat-card-actions>
+            <button mat-button routerLink="/">GO HOME</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
